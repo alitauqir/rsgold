@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="Description" content="A miniature card of Rs Gold Shoppee Pvt Ltd" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&
+        display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" type="image/png" href="assets/img/img.png" />
+    <title>Rs Gold Shoppee Pvt Ltd</title>
+</head>
+
+<body>
+
+
+    <!-- Categories Card -->
+    <div class="card boot-card category-card">
+        <div class="single-card-header">
+            <div class="header-row">
+                <div class="row">
+                    <div class="col-1">
+                        <a href="index.html"><i class="fas fa-long-arrow-alt-left"></i></a>
+                    </div>
+                    <div class="col-11">
+                        <h5>Category - Necklaces</h5>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="category-image-section">
+            <img src="assets/img/necklace.jpg" class="img img-fluid" alt="Category banner">
+        </div>
+        <div class="product-list">
+            <div class="products">
+                <div class="row">
+                    <div class="col-6 np" onclick="location.href='products/n1.html'">
+                        <img src="assets/img/products/n1.jpg" class="img img-fluid" alt="Product 1">
+                        <h6>Necklace Model 1</h6>
+                    </div>
+                    <div class="col-6 np" onclick="location.href='products/n2.html'">
+                        <img src="assets/img/products/n2.jpg" class="img img-fluid" alt="Product 2">
+                        <h6>Necklace Model 2</h6>
+                    </div>
+                    <div class="col-6 np" onclick="location.href='products/n3.html'">
+                        <img src="assets/img/products/n3.jpg" class="img img-fluid" alt="Product 3">
+                        <h6>Necklace Model 3</h6>
+                    </div>
+                    <div class="col-6 np" onclick="location.href='products/n4.html'">
+                        <img src="assets/img/products/n4.jpg" class="img img-fluid" alt="Product 6">
+                        <h6>Necklace Model 4</h6>
+                    </div>
+                    <div class="col-6 np" onclick="location.href='products/n5.html'">
+                        <img src="assets/img/products/n5.jpg" class="img img-fluid" alt="Product 4">
+                        <h6>Necklace Model 5</h6>
+                    </div>
+                    <div class="col-6 np" onclick="location.href='products/n6.html'">
+                        <img src="assets/img/products/n6.jpg" class="img img-fluid" alt="Product 5">
+                        <h6>Necklace Model 6</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- It ends here -->
+
+    <footer class="fixed-bottom">
+        <div class="row">
+            <div class="col-3 footer-icons">
+                <a href="index.html" style="display: block;text-align: center;color: #000;"><i class="fas fa-home"></i> </a>
+                <p><a href="index.html">Home</a></p>
+            </div>
+            <div class="col-3 footer-icons">
+                <a href="category.html" id="installApp" style="display: block;text-align: center;color: #000;"><i class="fas fa-layer-group"></i> </a>
+                <p><a href="category.html" id="installApp">Categories</a></p>
+            </div>
+            <div class="col-3 footer-icons">
+                <a href="gallery.html" style="display: block;text-align: center;color: #000;"><i class="fas fa-images"></i>
+                </a>
+                <p><a href="gallery.html">Gallery</a></p>
+            </div>
+            <div class="col-3 footer-icons">
+                <a href="contact.html" style="display: block;text-align: center;color: #000;"> <i
+                        class="far fa-address-card"></i> </a>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#dat").datepicker();
+        })
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('.glry').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image'
+        // other options
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+        const shareButton = document.querySelector('.share-button');
+        shareButton.addEventListener('click', event => {
+            if (navigator.share) { 
+            navigator.share({
+                title: 'a Miniature for Rs Gold Shoppee Pvt Ltd',
+                text: 'a Miniature for Rs Gold Shoppee Pvt Ltd',
+                url: 'http://rsgoldshoppeepvtltd.amigoo.in'
+                }).then(() => {
+                console.log('Thanks for sharing!');
+                })
+                .catch(console.error);
+                } else {
+                   console.log('Something');
+                }
+            });
+    </script>
+</body>
+
+</html>
